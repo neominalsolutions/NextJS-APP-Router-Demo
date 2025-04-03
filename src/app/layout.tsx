@@ -46,6 +46,8 @@ export default function RootLayout({
 				{children}
 
 				<hr></hr>
+				<h1>Paralel Routes with Slot</h1>
+				<hr></hr>
 
 				<Suspense fallback={<div>Analitics loading...</div>}>
 					<Analitics />
