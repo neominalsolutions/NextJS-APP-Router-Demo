@@ -8,8 +8,14 @@ export default function AdminLayout({
 	return (
 		<section>
 			<h1>Admin Layout</h1>
-
-			{children}
+			<Link style={{ color: 'blue' }} href="/admin/users">
+				Users
+			</Link>{' '}
+			<span> | </span>
+			<Link style={{ color: 'blue' }} href="/admin/role/manager">
+				Manager Detail
+			</Link>
+			<p style={{ padding: 10 }}>{children}</p>
 		</section>
 	);
 }

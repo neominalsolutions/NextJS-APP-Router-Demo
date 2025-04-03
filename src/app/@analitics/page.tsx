@@ -1,7 +1,7 @@
 function Analitics() {
 	return (
-		<div style={{ padding: 10 }}>
-			<h1>Analitics Page</h1>
+		<div style={{ padding: 5 }}>
+			<h2>Analitics Page</h2>
 		</div>
 	);
 }

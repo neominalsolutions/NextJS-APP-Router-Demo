@@ -1,7 +1,7 @@
 function Teams() {
 	return (
-		<div style={{ padding: 10 }}>
-			<h1>Team Page</h1>
+		<div style={{ padding: 5 }}>
+			<h2>Team Page</h2>
 		</div>
 	);
 }

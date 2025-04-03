@@ -5,6 +5,7 @@ import { Suspense } from 'react';
 import Team from './@teams/page';
 import Analitics from './@analitics/page';
 import Teams from './@teams/page';
+import Link from 'next/link';
 
 const geistSans = localFont({
 	src: './fonts/GeistVF.woff',
@@ -33,7 +34,18 @@ export default function RootLayout({
 				style={{ padding: 20 }}
 				className={`${geistSans.variable} ${geistMono.variable}`}
 			>
+				<h1>Main Layout</h1>
+
+				<nav style={{ padding: 10 }}>
+					<Link style={{ color: 'blue' }} href={'/admin'}>
+						Admin Link
+					</Link>
+				</nav>
+				<hr />
+
 				{children}
+
+				<hr></hr>
 
 				<Suspense fallback={<div>Analitics loading...</div>}>
 					<Analitics />
